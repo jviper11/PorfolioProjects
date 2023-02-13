@@ -1,10 +1,10 @@
-/*We’ve curated a set of interesting data sets for you: NASA astronauts, Superbowl results, Pokemon stats, NBA players, Top movies, Top countries by population, Solar system objects by size, Marvel characters, Furniture store sales, Earned KA badges, Winston's donut logs, Card game results, and NFL draft picks.
+/*Weâ€™ve curated a set of interesting data sets for you: NASA astronauts, Superbowl results, Pokemon stats, NBA players, Top movies, Top countries by population, Solar system objects by size, Marvel characters, Furniture store sales, Earned KA badges, Winston's donut logs, Card game results, and NFL draft picks.
 
 --Pick one of those data sets or create a data set like that, and use advanced SELECT queries to discover things about the data. What sort of questions might one have about that data, like if they were using it for an app or a business idea? Here are some ideas:
 
 --What are average, max, and min values in the data?
 --What about those numbers per category in the data (using HAVING)?
---What ways are there to group the data values that don’t exist yet (using CASE)?
+--What ways are there to group the data values that donâ€™t exist yet (using CASE)?
 What interesting ways are there to filter the data (using AND/OR)?
 */
 
@@ -31,7 +31,7 @@ CREATE TABLE players(
    Last_Season       INTEGER
 );
 
----WE insert the data from the data set we chose from ' NBA players'
+---We insert the data from the data set we chose from ' NBA players'
 
 INSERT INTO players(Player,Team,Conference,Date,Position,Height,Weight,Age,Draft_Year,Seasons_in_league,Season,Season_short,Predraft_Team,Real_value,Height_CM,Weight_KG,Last_Season) VALUES ('Norman Powell','Toronto Raptors','East','Mar 9, 2020','SG','6''4',215,26,2015,4,'2019-2020',2020,'UCLA',0.5,193,97,1);
 INSERT INTO players(Player,Team,Conference,Date,Position,Height,Weight,Age,Draft_Year,Seasons_in_league,Season,Season_short,Predraft_Team,Real_value,Height_CM,Weight_KG,Last_Season) VALUES ('LeBron James','Los Angeles Lakers','West','Mar 9, 2020','F','6''8',250,35,2003,16,'2019-2020',2020,'St. Vincent St. Mary High School (Ohio)',0.5,203,113,1);
@@ -1396,7 +1396,7 @@ FROM players
 GROUP BY Team, Conference
 having Conference ='East';
 
---What ways are there to group the data values that don’t exist yet (using CASE)?
+--What ways are there to group the data values that donâ€™t exist yet (using CASE)?
 ------------------------------------------------------------------------------------------------
 --Before we use CASE, we create two that the CASE will use
 
